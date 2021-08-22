@@ -1,7 +1,13 @@
 const About = () => {
   return (
-    <div>about</div>
+    <Container>
+      <div>about</div>
+    </Container>
   )
 }
+
+const Container = styled.div`
+    
+`;
 
 export default About;
