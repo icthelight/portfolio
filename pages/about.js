@@ -1,10 +1,13 @@
 import styled from 'styled-components';
+import Head from 'next/head';
 
 
 const About = () => {
   return (
     <Container>
-      <div>about</div>
+      <Head>
+        <title>포트폴리오 - Bio</title>
+      </Head>
     </Container>
   )
 }

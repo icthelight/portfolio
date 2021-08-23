@@ -1,11 +1,21 @@
+import Header from "../src/views/shared/components/Header";
+import Footer from "../src/views/shared/components/Footer";
+import styled from 'styled-components';
+import '../src/styled/reset.css'
+
 function MyApp({Component, pageProps}) {
+
   return (
-    <div>
-      <div>header</div>
-      <Component {...pageProps} />
-      <div>footer</div>
-    </div>
+    <Container>
+        <Header/>
+        <Component {...pageProps} />
+        <Footer/>
+    </Container>
+
   )
 }
 
+const Container = styled.div`
+    
+`;
 export default MyApp
