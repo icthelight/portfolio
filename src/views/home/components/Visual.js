@@ -17,7 +17,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('https://images.unsplash.com/photo-1553044707-b710ee53ffbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2880&q=80') 50%/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80') 50%/cover no-repeat;
 `;
 
 const Content = styled.div`
