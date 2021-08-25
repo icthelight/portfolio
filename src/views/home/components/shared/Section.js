@@ -13,6 +13,7 @@ const Section = ({children}) => {
 const Container = styled.section`
   height: 100vh;
   padding: 100px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #fff;
+  background: #EDEEED;
 `;
 export default Section;
