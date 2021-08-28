@@ -5,19 +5,25 @@ const Visual = () => {
   return (
     <Container>
       <Content>
-        <Slogan>할 수 있다</Slogan>
+        <Slogan>
+          <h1>
+            안녕하세요. <br/>
+            신입 프론트엔드 개발자 김형지입니다.
+          </h1>
+        </Slogan>
       </Content>
+      <Screen/>
     </Container>
   )
 }
 
 const Container = styled.div`
   position: relative;
-  height: 500px;
+  height: 750px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80') 50%/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80') 50%/cover no-repeat;
 `;
 
 const Content = styled.div`
@@ -38,7 +44,7 @@ const Screen = styled.div`
   left:0;
   right: 0;
   pointer-events: none;
-  background: rgba(0,0,0,0.3)
+  background: rgba(0,0,0,0.5)
   
 `;
 export default Visual;

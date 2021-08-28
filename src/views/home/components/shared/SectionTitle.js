@@ -10,8 +10,10 @@ const SectionTitle = ({children}) => {
 }
 
 const Container = styled.h2`
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
+  color: #353866;
 `;
 export default SectionTitle;
