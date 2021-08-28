@@ -1,9 +1,12 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
     <Container>
-      <NavItem>Bio</NavItem>
+      <NavItem>
+        Bio
+      </NavItem>
       <NavItem>Works</NavItem>
       <NavItem>Skills</NavItem>
       <NavItem>Contact</NavItem>
@@ -12,9 +15,12 @@ const Nav = () => {
 }
 
 const Container = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: center;
-  background:#191E32;
+  background: #353866;
   height: 100px;
 `;
 

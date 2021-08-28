@@ -5,7 +5,9 @@ import Gnb from "./Gnb";
 const Header = () => {
   return (
     <Container>
-      <Logo>김형지</Logo>
+      <Logo>
+            김형지
+      </Logo>
       <Gnb/>
     </Container>
   )
@@ -24,7 +26,7 @@ const Container = styled.div`
 `;
 
 const Logo = styled.div`
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
   font-weight: 500;
 `;

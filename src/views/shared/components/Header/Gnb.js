@@ -39,7 +39,7 @@ const NavLink = styled.a`
   height: 70px;
   padding: 0 20px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
 `;

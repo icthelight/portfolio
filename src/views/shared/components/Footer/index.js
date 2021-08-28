@@ -1,16 +1,17 @@
-import React from 'react';
 import styled from 'styled-components';
+
+import Desc from "./Desc";
 
 
 const Footer = () => {
     return (
         <Container>
-            Footer
+            <Desc/>
         </Container>
     )
 }
 
 const Container = styled.div`
-
+  padding: 0 50px;
 `;
 export default Footer;

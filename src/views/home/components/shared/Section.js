@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import SectionTitle from "./SectionTitle";
 
 
 const Section = ({children}) => {
@@ -14,6 +13,6 @@ const Container = styled.section`
   height: 100vh;
   padding: 100px 0;
   border-bottom: 2px solid #fff;
-  background: #EDEEED;
+  background: #eee;
 `;
 export default Section;
