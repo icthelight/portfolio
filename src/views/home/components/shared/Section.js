@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
+import InView from "../../../shared/components/inView";
 
-const Section = ({children}) => {
+
+const Section = ({children, id}) => {
   return (
-    <Container>
-      {children}
-    </Container>
+    <InView>
+      <Container id={id}>
+        {children}
+      </Container>
+    </InView>
   )
 }
 

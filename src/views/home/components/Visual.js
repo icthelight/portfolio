@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const Visual = () => {
   return (
     <Container>
@@ -19,7 +18,7 @@ const Visual = () => {
 
 const Container = styled.div`
   position: relative;
-  height: 750px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +33,7 @@ const Content = styled.div`
 const Slogan = styled.h1`
   font-size: 40px;
   color: #fff;
-  font-weight: 500;
+  line-height: 1.4;
 `;
 
 const Screen = styled.div`

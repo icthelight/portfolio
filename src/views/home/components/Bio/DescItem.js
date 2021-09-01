@@ -51,6 +51,7 @@ const Item = styled.div`
     color: #333;
     line-height: 30px;
     border-bottom: 1px solid #2b349a;
+    padding-bottom: 10px;
   }
 
   p {
