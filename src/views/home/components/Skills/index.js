@@ -8,7 +8,7 @@ import SkillItem from "./SkillItem";
 
 const Skills = () => {
     return (
-        <Container>
+        <Container id={'skills'}>
           <SectionTitle>Skills</SectionTitle>
           <SkillItem/>
         </Container>

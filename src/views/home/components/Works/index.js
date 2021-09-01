@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Section from "../shared/Section";
 import SectionTitle from "../shared/SectionTitle";
-import WorkItems from "./WorkItems";
+import Projects from "./Projects";
 
 
 const Works = () => {
     return (
-        <Container>
+        <Container id={'works'}>
           <SectionTitle>Works</SectionTitle>
-          <WorkItems/>
+          <Projects/>
         </Container>
     )
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Desc = () => {
   return (
-    <Container>
+    <Container id={'contact'}>
        <Item>
          <Title>E-MAIL</Title>
          <Content>icthelight@naver.com</Content>

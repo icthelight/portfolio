@@ -1,33 +1,28 @@
 import styled from 'styled-components';
 import Image from 'next/image'
 
-import marketer from '../../../../images/marketer.png'
+import {works} from "../../../../data/works";
+import {ContentContainer} from "../../../shared/components/LayoutStyled";
 
-
-const WorkItems = () => {
+const Projects = () => {
   return (
     <Container>
-      <Grid>
-        <GridItem>
-          <Item>
-            <Thumb href={'https://github.com/icthelight/Marketer_rev.git'}>
-              <Image src={marketer}></Image>
-              <Screen/>
-            </Thumb>
-            <Desc>
-              Html, SCSS 사용
-            </Desc>
-          </Item>
-        </GridItem>
-        <GridItem>
-          <Item>
-
-          </Item>
-        </GridItem>
-        <GridItem>
-          <Item></Item>
-        </GridItem>
-      </Grid>
+      <ContentContainer>
+        <Grid>
+          {
+            works.list.map((item, index) => (
+              <GridItem key={index}>
+                <Item>
+                  <Thumb href={item.sourceUrl}>
+                    <Image src={item.thumbnail} alt={'프로젝트 미리보기'}/>
+                    <Screen/>
+                  </Thumb>
+                </Item>
+              </GridItem>
+            ))
+          }
+        </Grid>
+      </ContentContainer>
     </Container>
   )
 }
@@ -86,4 +81,4 @@ const Desc = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export default WorkItems;
+export default Projects;

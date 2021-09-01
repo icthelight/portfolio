@@ -14,6 +14,14 @@ const Container = styled.h2`
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
-  color: #353866;
+  color: #2E8BC0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.4s;
+
+  .inView & {
+    opacity: 1;
+    transform: none;
+  }
 `;
 export default SectionTitle;
