@@ -29,7 +29,7 @@ const Container = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background: #2E8BC0;
+  background: rgba(0,173,181,0.8);
   color: #fff;
   font-size: 34px;
   display: flex;

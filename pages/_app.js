@@ -1,6 +1,7 @@
+import styled from 'styled-components';
+
 import Header from "../src/views/shared/components/Header";
 import Footer from "../src/views/shared/components/Footer";
-import styled from 'styled-components';
 import '../src/styled/reset.css'
 import BackTop from "../src/views/shared/components/BackTop";
 

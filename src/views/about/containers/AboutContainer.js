@@ -1,10 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
+
+import KoreanCV from "../components/KoreanCV";
+import EnglishCV from "../components/EnglishCV";
 
 const AboutContainer = () => {
   return (
     <Container>
-      AboutContainer
+      <KoreanCV/>
+      <EnglishCV/>
     </Container>
   )
 }

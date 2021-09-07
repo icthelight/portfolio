@@ -26,6 +26,6 @@ export const works = {
       thumbnail:  unPop,
       siteUrl: '',
       sourceUrl: 'https://github.com/icthelight/youtube.git',
-    }
+    },
   ]
 }

@@ -48,9 +48,9 @@ const Item = styled.div`
     margin-bottom: 20px;
     font-size: 26px;
     font-weight: 700;
-    color: #333;
+    color: rgb(50,50,50);
     line-height: 30px;
-    border-bottom: 1px solid #2b349a;
+    border-bottom: 1px solid #767676;
     padding-bottom: 10px;
   }
 
@@ -61,6 +61,8 @@ const Item = styled.div`
 
     &.name {
       font-weight: bold;
+      margin-bottom: 10px;
+      line-height: 35px;
     }
   }
 

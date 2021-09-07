@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import {useEffect, useState} from "react";
+import styled, {css} from 'styled-components';
 import cn from 'classnames';
+import {useRouter} from "next/router";
 
 import Gnb from "./Gnb";
 import {boxShadow} from "../../../../styled/mixin";
@@ -10,9 +10,11 @@ import {useMyRef} from "../../../../hook/useMyRef";
 const Header = () => {
 
   const scrolled = useMyRef(700)
+  const location = useRouter();
+  const isHome = location.asPath === '/'
 
   return (
-    <Container className={cn({scrolled})}>
+    <Container className={cn({scrolled})} isHome={isHome}>
       <Logo>
         김형지
       </Logo>
@@ -41,6 +43,10 @@ const Container = styled.div`
       box-shadow: ${boxShadow(3)};
     }
   }
+  
+  ${p => !p.isHome && css`
+    background: rgb(0,173,181);
+  `}
 `;
 
 const Logo = styled.div`
