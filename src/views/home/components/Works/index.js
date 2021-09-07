@@ -1,15 +1,15 @@
-import React from 'react';
 import styled from 'styled-components';
+
 import Section from "../shared/Section";
 import SectionTitle from "../shared/SectionTitle";
-import Projects from "./Projects";
+import Project from "./Project";
 
 
 const Works = () => {
     return (
         <Container id={'works'}>
           <SectionTitle>Works</SectionTitle>
-          <Projects/>
+          <Project/>
         </Container>
     )
 }

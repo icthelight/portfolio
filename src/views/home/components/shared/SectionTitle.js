@@ -14,7 +14,7 @@ const Container = styled.h2`
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
-  color: #2E8BC0;
+  color: rgb(53,98,123);
   opacity: 0;
   transform: translateY(50px);
   transition: 0.4s;

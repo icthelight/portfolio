@@ -11,7 +11,7 @@ const Gnb = () => {
         </Link>
       </NavItem>
       <NavItem>
-        <Link href={'/bio'}>
+        <Link href={'/about'}>
           <NavLink>About</NavLink>
         </Link>
       </NavItem>
@@ -42,6 +42,7 @@ const NavLink = styled.a`
   font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
+  cursor: pointer;
   .scrolled & {
     color: #333;
   }
