@@ -18,5 +18,9 @@ const Container = styled.section`
   padding: 100px 0;
   border-bottom: 2px solid #fff;
   background: #eee;
+  
+  @media screen and (max-width: 980px) {
+  height: unset;
+}
 `;
 export default Section;
