@@ -1,4 +1,6 @@
+import styled from 'styled-components';
 import {useRouter} from 'next/router';
+
 
 const Blog = () => {
 
@@ -6,8 +8,18 @@ const Blog = () => {
   const id  = router.query.id;
 
   return (
-    <div>{id}</div>
-  )
+    <Container>
+      <Content>{id}</Content>
+    </Container>
+)
 }
+
+const Container = styled.div`
+    
+`;
+
+const Content = styled.div`
+  
+`;
 
 export default Blog;

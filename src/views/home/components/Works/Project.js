@@ -15,7 +15,6 @@ const Project = () => {
     if (scrollRef.current) {
       setScrollLeft(scrollRef.current.scrollLeft)
       setMaxScroll(scrollRef.current.scrollWidth - scrollRef.current.clientWidth)
-      console.log(scrollRef)
     }
   }, [])
 
@@ -166,6 +165,12 @@ const Thumb = styled.div`
     width: 100%;
     height: 60vh;
     object-fit: cover;
+  }
+  
+  @media screen and (max-width: 980px) {
+    img {
+      height: 40vh;
+    }
   }
 `;
 

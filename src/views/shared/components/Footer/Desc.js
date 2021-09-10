@@ -5,15 +5,15 @@ import {BiPhoneCall} from "react-icons/bi";
 const Desc = () => {
   return (
     <Container id={'contact'}>
-       <Item>
-         <Title>
-           <Icon>
-             <AiOutlineMail/>
-           </Icon>
-           E-MAIL
-         </Title>
-         <Content>icthelight@naver.com</Content>
-       </Item>
+      <Item>
+        <Title>
+          <Icon>
+            <AiOutlineMail/>
+          </Icon>
+          E-MAIL
+        </Title>
+        <Content>icthelight@naver.com</Content>
+      </Item>
       <Item>
         <Title>
           <Icon>
@@ -39,11 +39,20 @@ const Desc = () => {
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  
+
+  @media screen and (max-width: 980px) {
+    display: block;
+  }
+
 `;
 
 const Item = styled.div`
   margin: 20px;
+
+  @media screen and (max-width: 980px) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
 `;
 
 const Title = styled.div`
@@ -59,7 +68,8 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  svg{
+
+  svg {
     width: 24px;
     height: 24px;
     margin-right: 4px;

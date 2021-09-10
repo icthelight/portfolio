@@ -1,12 +1,16 @@
-import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 
+import BlogContainer from "../../src/views/blog/containers/BlogContainer";
 
 const BlogList = () => {
 
     return (
         <Container>
-            BlogList
+            <Head>
+              <title>포트폴리오 - Blog </title>
+            </Head>
+          <BlogContainer/>
         </Container>
     )
 }

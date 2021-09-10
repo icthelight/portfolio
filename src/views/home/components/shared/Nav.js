@@ -15,7 +15,7 @@ const Nav = () => {
                   spy={true}
                   smooth={true}
                   hashSpy={true}
-                  offset={-100}
+                  offset={-20}
                   duration={500}
             >
               <Icon>{item.icon}</Icon>
