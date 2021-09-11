@@ -1,32 +1,39 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
+
+
 import AvatarInfo from "../AvatarInfo";
 import {boxShadow} from "../../../../styled/mixin";
 
 const Item = ({item}) => {
   return (
-    <Container>
-      <ItemBox>
-        <Thumb>
-          <Image src={item.thumbnail}/>
-        </Thumb>
-        <Desc>
-          <h3>
-            {
-              item.title.length > 18 ? item.title.substr(0, 18) + "..." : item.title
-            }
-          </h3>
-          <p>
-            {
-              item.description.length > 50 ? item.description.substr(0, 50) + "..." : item.description
-            }
-          </p>
-        </Desc>
-        <Details>
-          <AvatarInfo item={item}/>
-        </Details>
-      </ItemBox>
-    </Container>
+    <>
+    <Link href={`/blog/${item.title}`}>
+      <Container>
+        <ItemBox>
+          <Thumb>
+            <Image src={item.thumbnail}/>
+          </Thumb>
+          <Desc>
+            <h3>
+              {
+                item.title.length > 18 ? item.title.substr(0, 18) + "..." : item.title
+              }
+            </h3>
+            <p>
+              {
+                item.description.length > 50 ? item.description.substr(0, 50) + "..." : item.description
+              }
+            </p>
+          </Desc>
+          <Details>
+            <AvatarInfo item={item}/>
+          </Details>
+        </ItemBox>
+      </Container>
+    </Link>
+    </>
   )
 }
 
@@ -48,10 +55,12 @@ const ItemBox = styled.div`
 `;
 
 const Thumb = styled.div`
+  text-align: center;
   img {
     width: 100%;
-    height: 100%;
+    height: 160px;
     object-fit: cover;
+    background: #eee;
   }
 `;
 
