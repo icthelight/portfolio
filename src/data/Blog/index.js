@@ -1,10 +1,12 @@
-import FilterPopup from '../../images/Blog/Filter Popup.png';
-import qs from '../../images/Blog/qs.png';
-import ratiobox from '../../images/Blog/ratiobox.jpeg';
+import FilterPopup from '../../images/Blog/Filter/Filter Popup.png';
+import qs from '../../images/Blog/qs/qs.png';
+import ratiobox from '../../images/Blog/ratiobox/ratiobox.jpeg';
 import popup from '../../images/un-popup.png';
-import scroll from '../../images/Blog/scroll.png'
-import infinite from '../../images/Blog/intersection observer.png'
+import scroll from '../../images/Blog/scroll/scroll.png'
+import infinite from '../../images/Blog/intersection observer/intersection observer.png'
+
 import Filter from "../../views/blog/components/BlogDetail/Post/Filter";
+import QsLib from "../../views/blog/components/BlogDetail/Post/QsLib";
 
 export const blogData = [
   {
@@ -25,6 +27,7 @@ export const blogData = [
     description: 'Query String을 객체 혹은 문자열로 변환시킬 수 있도록 qs 라이브러리를 활용한 예시입니다.',
     publishedAt: new Date('2021-09-10'),
     tags: ['qs 라이브러리', 'qs.stringify', 'qs.parse'],
+    desc: <QsLib/>,
   },
   {
     title: '컨테이너의 비율에 따라 이미지 크기를 조절하는 RatioBox',

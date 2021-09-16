@@ -1,12 +1,16 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 import InView from "../../../shared/components/inView";
+import {useRouter} from "next/router";
 
 
 const Section = ({children, id}) => {
+  const location = useRouter();
+  const isBlogId = location.pathname === '/blog/[id]'
+
   return (
     <InView>
-      <Container id={id}>
+      <Container id={id} isBlogId={isBlogId}>
         {children}
       </Container>
     </InView>
@@ -22,5 +26,9 @@ const Container = styled.section`
   @media screen and (max-width: 980px) {
   height: unset;
 }
+
+  ${p => p.isBlogId && css`
+    height: unset;
+  `}
 `;
 export default Section;
