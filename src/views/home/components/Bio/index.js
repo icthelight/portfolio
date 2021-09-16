@@ -77,7 +77,7 @@ const Desc = styled.div`
 const Intro = styled.div`
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 5px 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;

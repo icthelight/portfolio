@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+
 import {ContentContainer} from "../../src/views/shared/components/LayoutStyled";
 import Section from "../../src/views/home/components/shared/Section";
 import SectionTitle from "../../src/views/home/components/shared/SectionTitle";
@@ -18,7 +19,7 @@ const Blog = () => {
           {id}
         </SectionTitle>
         <Contents>
-          <BlogDetail/>
+          <BlogDetail id={id}/>
         </Contents>
       </ContentContainer>
     </Container>

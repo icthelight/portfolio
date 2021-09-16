@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import moment from 'moment';
 import 'moment/locale/ko';
-import Image from 'next/image';
 
 const AvatarInfo = ({item}) => {
   const {

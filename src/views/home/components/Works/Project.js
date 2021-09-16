@@ -163,13 +163,13 @@ const Thumb = styled.div`
 
   img {
     width: 100%;
-    height: 60vh;
+    height: 400px;
     object-fit: cover;
   }
   
   @media screen and (max-width: 980px) {
     img {
-      height: 40vh;
+      height: 200px;
     }
   }
 `;
