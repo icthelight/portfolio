@@ -10,7 +10,7 @@ const Content = ({content = []}) => {
         <TopHeader>
           <h3> {content.author}</h3>
           <span/>
-          <p> {format((content?.publishedAt), 'yyyy/MM/dd')}</p>
+          <p> {format((content.publishedAt), 'yyyy/MM/dd')}</p>
         </TopHeader>
         <Tags tags={content.tags}/>
       </Header>
@@ -22,7 +22,7 @@ const Content = ({content = []}) => {
 }
 
 const Container = styled.div`
-
+  padding: 50px 20px;
 `;
 
 const Header = styled.div`
