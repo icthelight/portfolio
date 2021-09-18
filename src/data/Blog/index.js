@@ -10,16 +10,6 @@ import QsLib from "../../views/blog/components/BlogDetail/Post/QsLib";
 
 export const blogData = [
   {
-    title: '팝업 드롭다운메뉴로 필터 기능 구현하기',
-    thumbnail: FilterPopup,
-    author: 'Hyungji Kim',
-    profile_image: 'https://yt3.ggpht.com/NumThnH54Ix3d9DGS6MLxFoi90DorJ41UrR5IxcJ4GLO5lqpaxtWP9L7MslDHodyId5oMUfZks4=s1067-c-fcrop64=1,00001632ffffd649-nd',
-    description: '드롭다운박스를 클릭하면 하단에 드롭다운메뉴가 팝업으로 생기는 기능입니다.',
-    publishedAt: new Date('2021-09-09'),
-    tags: ['팝업', '드롭다운메뉴', '필터 만들기'],
-    desc: <Filter/>,
-  },
-  {
     title: 'qs 라이브러리',
     thumbnail: qs,
     author: '김형지',
@@ -28,6 +18,16 @@ export const blogData = [
     publishedAt: new Date('2021-09-10'),
     tags: ['qs 라이브러리', 'qs.stringify', 'qs.parse'],
     desc: <QsLib/>,
+  },
+  {
+    title: '팝업 드롭다운메뉴로 필터 기능 구현하기',
+    thumbnail: FilterPopup,
+    author: 'Hyungji Kim',
+    profile_image: 'https://yt3.ggpht.com/NumThnH54Ix3d9DGS6MLxFoi90DorJ41UrR5IxcJ4GLO5lqpaxtWP9L7MslDHodyId5oMUfZks4=s1067-c-fcrop64=1,00001632ffffd649-nd',
+    description: '드롭다운박스를 클릭하면 하단에 드롭다운메뉴가 팝업으로 생기는 기능입니다.',
+    publishedAt: new Date('2021-09-09'),
+    tags: ['팝업', '드롭다운메뉴', '필터 만들기'],
+    desc: <Filter/>,
   },
   {
     title: '컨테이너의 비율에 따라 이미지 크기를 조절하는 RatioBox',

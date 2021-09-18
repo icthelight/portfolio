@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 import {format} from 'date-fns';
+
 import Tags from "./Tags";
 
 
@@ -14,6 +16,9 @@ const Content = ({content = []}) => {
         </TopHeader>
         <Tags tags={content.tags}/>
       </Header>
+      <ImageBox>
+        <Image src={content.thumbnail}/>
+      </ImageBox>
       <Desc>
         {content.desc || null}
       </Desc>
@@ -32,6 +37,7 @@ const Header = styled.div`
 const TopHeader = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 
   h3 {
@@ -53,6 +59,15 @@ const TopHeader = styled.div`
     background: #aaa;
     margin: 0 5px;
   }
+`;
+
+const ImageBox = styled.div`
+  margin: 20px auto;
+  text-align: center;
+   img {
+     width: 100%;
+     height: 190px;
+   }
 `;
 
 const Desc = styled.div`

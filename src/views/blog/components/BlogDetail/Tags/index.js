@@ -12,6 +12,7 @@ const Tags = ({tags = []}) => {
 
 const Container = styled.div`
   display: flex;
+  justify-content: center;
   margin: 14px 0;
 `;
 
