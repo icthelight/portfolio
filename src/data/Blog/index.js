@@ -7,6 +7,7 @@ import infinite from '../../images/Blog/intersection observer/intersection obser
 
 import Filter from "../../views/blog/components/BlogDetail/Post/Filter";
 import QsLib from "../../views/blog/components/BlogDetail/Post/QsLib";
+import InfiniteScroll from "../../views/blog/components/BlogDetail/Post/InfiniteScroll";
 
 export const blogData = [
   {
@@ -64,5 +65,7 @@ export const blogData = [
     description: 'ref 속성과 webAPI인 Intersection Observer를 활용하여 무한 스크롤을 구현하였습니다.',
     publishedAt: new Date('2021-09-01'),
     tags: ['무한 스크롤', 'infinite scroll', 'intersection observer'],
+    desc: <InfiniteScroll/>,
+
   },
 ]

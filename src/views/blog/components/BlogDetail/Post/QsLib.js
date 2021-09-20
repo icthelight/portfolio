@@ -40,7 +40,7 @@ const QsLib = () => {
         <Image src={qs4}/>
         <p></p>
         <Image src={qs5}/>
-        <p className={'highlight'}>심화) 이전의 query string 을 기억하고 새로 선택한 query string을 누적하여 url 에 기록하기!</p>
+        <p className={'important'}>심화) 이전의 query string 을 기억하고 새로 선택한 query string을 누적하여 url 에 기록하기!</p>
         <p>즉, 이전에 선택했던 location.search 를 기억하고(...queryParams), 거기에 새로 선택한 location.search 를 더해줘야 한다.</p>
         <p>현재 query string 은 queryParmas 의 객체 형태로 담기기 때문에 이번에는 반대로 queryParmas 객체를 문자열로 변경해줘야 하는 것!</p>
         <p>
