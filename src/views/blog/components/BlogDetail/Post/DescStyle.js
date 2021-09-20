@@ -16,8 +16,14 @@ const Container = styled.div`
     margin-bottom: 20px;
     white-space: pre-wrap;
     
-    &.highlight {
+    &.important {
+      font-weight: bold;
       color: rgb(12, 166, 120);
+    }
+    
+    &.italic {
+      font-style: italic;
+      color: #606060;
     }
   }
 

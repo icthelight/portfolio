@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
+import Head from 'next/head';
 
 import {ContentContainer} from "../../src/views/shared/components/LayoutStyled";
 import Section from "../../src/views/home/components/shared/Section";
@@ -14,6 +15,9 @@ const Blog = () => {
 
   return (
     <Container>
+      <Head>
+        <title>{id}</title>
+      </Head>
       <ContentContainer>
         <SectionTitle>
           {id}
