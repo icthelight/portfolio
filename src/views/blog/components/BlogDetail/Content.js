@@ -27,7 +27,7 @@ const Content = ({content = []}) => {
 }
 
 const Container = styled.div`
-  padding: 50px 20px;
+  
 `;
 
 const Header = styled.div`

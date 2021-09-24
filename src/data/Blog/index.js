@@ -8,6 +8,7 @@ import infinite from '../../images/Blog/intersection observer/intersection obser
 import Filter from "../../views/blog/components/BlogDetail/Post/Filter";
 import QsLib from "../../views/blog/components/BlogDetail/Post/QsLib";
 import InfiniteScroll from "../../views/blog/components/BlogDetail/Post/InfiniteScroll";
+import Popup from "../../views/blog/components/BlogDetail/Post/Popup";
 
 export const blogData = [
   {
@@ -47,6 +48,8 @@ export const blogData = [
     description: '사진을 클릭하면 해당 사진에 대한 정보가 팝업창으로 뜨는 기능입니다.',
     publishedAt: Date.now(),
     tags: ['팝업', 'createPortal', '리액트 팝업'],
+    desc: <Popup/>,
+
   },
   {
     title: '화살표 아이콘을 클릭하면 스크롤 이동하는 기능 만들기',
