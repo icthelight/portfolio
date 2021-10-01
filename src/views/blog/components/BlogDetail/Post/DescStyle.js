@@ -9,6 +9,7 @@ const DescStyle = ({children}) => {
 }
 
 const Container = styled.div`
+  margin-top: 40px;
   p {
     line-height: 30px;
     font-size: 18px;

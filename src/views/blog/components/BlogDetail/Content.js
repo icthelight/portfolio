@@ -1,23 +1,25 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import {format} from 'date-fns';
 
+import defaultThumb from '../../../../images/Blog/default thumb.png'
 import Tags from "./Tags";
 
 
 const Content = ({content = []}) => {
+  console.log(content)
   return (
     <Container>
       <Header>
         <TopHeader>
           <h3> {content.author}</h3>
           <span/>
-          <p> {format((content.publishedAt), 'yyyy/MM/dd')}</p>
+          <p> {content.publishedAt}</p>
         </TopHeader>
         <Tags tags={content.tags}/>
       </Header>
       <ImageBox>
-        <Image src={content.thumbnail}/>
+        <Image src={content?.thumbnail || defaultThumb}/>
+        <h3>{content.description}</h3>
       </ImageBox>
       <Desc>
         {content.desc || null}
@@ -68,6 +70,8 @@ const ImageBox = styled.div`
      width: 100%;
      height: 190px;
    }
+  
+  color: #767676;
 `;
 
 const Desc = styled.div`

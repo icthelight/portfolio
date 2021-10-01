@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import AvatarInfo from "../AvatarInfo";
 import {boxShadow} from "../../../../styled/mixin";
+import defaultThumb from '../../../../images/Blog/default thumb.png'
+
 
 const Item = ({item}) => {
   return (
@@ -12,7 +14,7 @@ const Item = ({item}) => {
       <Container>
         <ItemBox>
           <Thumb>
-            <Image src={item.thumbnail}/>
+            <Image src={item.thumbnail || defaultThumb}/>
           </Thumb>
           <Desc>
             <h3>
