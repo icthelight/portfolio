@@ -5,6 +5,10 @@ export const skills = [
 
   },
   {
+    title: 'Firebase',
+    desc: 'Firebase 플랫폼을 이용하여 게시글 작성, 수정 및 삭제, 이미지 업로드 등의 기능을 하는 블로그 사이트를 제작할 수 있습니다.'
+  },
+  {
     title: 'JavaScript',
     desc: 'ES6 문법 사용에 익숙합니다.',
   },
