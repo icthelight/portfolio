@@ -6,7 +6,6 @@ import Tags from "./Tags";
 
 
 const Content = ({content = []}) => {
-  console.log(content)
   return (
     <Container>
       <Header>
