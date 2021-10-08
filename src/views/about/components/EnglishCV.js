@@ -29,9 +29,6 @@ const EnglishCV = () => {
         I am a cooperative person with outstanding interpersonal skills, which I believe is the most important thing in
         a teamwork.<br/>
 
-        I am now seeking a new job in your company and am happy to have this opportunity.<br/>
-        Please find enclosed my resume for more information.<br/><br/>
-
         I am available for interview at any time, and I can commence work immediately.<br/><br/>
 
         I’ll be looking forward to hearing from you.
