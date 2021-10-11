@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -37,14 +38,19 @@ const ProjectsSlider = () => {
                     <Content>{item.desc}</Content>
                   </Desc>
                   <IconBox>
-                    <Icon href={item.sourceUrl}>
-                      <RiGithubFill/>
-                      <h3>View Source</h3>
-                    </Icon>
-                    <Icon href={item.siteUrl}>
-                      <RiGlobalLine/>
-                      <h3>Visit Website</h3>
-                    </Icon>
+                    <Link href={item.sourceUrl}>
+                      <Icon>
+                        <RiGithubFill/>
+                        <h3>View Source</h3>
+                      </Icon>
+                    </Link>
+                    <Link href={item.siteUrl}>
+                      <Icon>
+                        <RiGlobalLine/>
+                        <h3>Visit Website</h3>
+                      </Icon>
+                    </Link>
+
                   </IconBox>
                 </Item>
               </div>
@@ -69,10 +75,11 @@ const Container = styled.div`
     li {
       &.slick-active {
         button {
-          background: rgb(0,173,181);
+          background: rgb(0, 173, 181);
         }
       }
     }
+
     button {
       font-size: 0;
       padding: 0;
@@ -84,7 +91,7 @@ const Container = styled.div`
       margin: 0 5px;
       border: 0;
       display: flex;
-      
+
     }
 
 
