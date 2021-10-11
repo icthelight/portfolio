@@ -69,7 +69,7 @@ const Container = styled.div`
     li {
       &.slick-active {
         button {
-          background: #18f;
+          background: rgb(0,173,181);
         }
       }
     }

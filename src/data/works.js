@@ -1,6 +1,6 @@
 import marketer from '../images/marketer.png';
 import unHome from '../images/un-home.png';
-import unPop from '../images/un-popup.png';
+import youtube from '../images/youtube.png';
 
 export const works = {
   title: 'works',
@@ -23,7 +23,7 @@ export const works = {
     {
       name: 'YouTube',
       desc: 'ReactJS, Redux(Redux Toolkit)를 사용하여 동영상을 검색하고, 동영상 정보를 불러오는 사이트를 제작하였습니다.',
-      thumbnail:  unPop,
+      thumbnail:  youtube,
       siteUrl: '',
       sourceUrl: 'https://github.com/icthelight/youtube.git',
     },
