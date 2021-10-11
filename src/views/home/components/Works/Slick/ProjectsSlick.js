@@ -4,58 +4,92 @@ import Image from 'next/image';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import {ContentContainer} from "../../../../shared/components/LayoutStyled";
 import {works} from "../../../../../data/works";
 import {RiGithubFill, RiGlobalLine} from "react-icons/ri";
 
-export default class ProjectsSlick extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-      <div>
-        <ContentContainer>
-          <StyledSlider {...settings}
-          >
-            {works.list.map(item => {
-              return (
-                <div key={item.name}>
-                  <Item key={item.name} className={'item'}>
-                    <Thumb>
-                      <Image src={item.thumbnail}/>
-                    </Thumb>
-                    <Desc>
-                      <Title>{item.name}</Title>
-                      <Content>{item.desc}</Content>
-                    </Desc>
-                    <IconBox>
-                      <Icon href={item.sourceUrl}>
-                        <RiGithubFill/>
-                        <h3>View Source</h3>
-                      </Icon>
-                      <Icon href={item.siteUrl}>
-                        <RiGlobalLine/>
-                        <h3>Visit Website</h3>
-                      </Icon>
-                    </IconBox>
-                  </Item>
-                </div>
-              );
-            })}
-          </StyledSlider>
-        </ContentContainer>
-      </div>
-    );
-  }
+const ProjectsSlider = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
+  return (
+    <Container>
+      <ContentContainer>
+        <Slider {...settings}
+        >
+          {works.list.map(item => {
+            return (
+              <div key={item.name}>
+                <Item key={item.name} className={'item'}>
+                  <Thumb>
+                    <Image src={item.thumbnail}/>
+                  </Thumb>
+                  <Desc>
+                    <Title>{item.name}</Title>
+                    <Content>{item.desc}</Content>
+                  </Desc>
+                  <IconBox>
+                    <Icon href={item.sourceUrl}>
+                      <RiGithubFill/>
+                      <h3>View Source</h3>
+                    </Icon>
+                    <Icon href={item.siteUrl}>
+                      <RiGlobalLine/>
+                      <h3>Visit Website</h3>
+                    </Icon>
+                  </IconBox>
+                </Item>
+              </div>
+            );
+          })}
+        </Slider>
+      </ContentContainer>
+    </Container>
+  )
 }
 
+export default ProjectsSlider;
+
+const Container = styled.div`
+  .slick-arrow {
+  }
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+
+    li {
+      &.slick-active {
+        button {
+          background: #18f;
+        }
+      }
+    }
+    button {
+      font-size: 0;
+      padding: 0;
+      outline: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 5px;
+      border: 0;
+      display: flex;
+      
+    }
+
+
+  }
+`;
 const StyledSlider = styled(Slider)`
   .slick-slide div {
     outline: none;
@@ -77,12 +111,13 @@ const ImageContainer = styled.div`
 `;
 
 const Item = styled.div`
- 
+
 `;
 
 const Thumb = styled.div`
   display: flex;
   justify-content: center;
+
   img {
     width: 100%;
     height: 400px;
@@ -140,10 +175,11 @@ const Icon = styled.div`
 
   &:hover {
     background: #fff;
-    border: 1px solid rgb(53,98,123);
-    color: rgb(53,98,123);
+    border: 1px solid rgb(53, 98, 123);
+    color: rgb(53, 98, 123);
+
     svg {
-      fill: rgb(53,98,123);
+      fill: rgb(53, 98, 123);
     }
   }
 
