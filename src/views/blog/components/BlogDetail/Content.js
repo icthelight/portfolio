@@ -14,7 +14,9 @@ const Content = ({content = []}) => {
           <span/>
           <p> {content.publishedAt}</p>
         </TopHeader>
-        <Tags tags={content.tags}/>
+        <TagBox>
+          관련 키워드 <Tags tags={content.tags}/>
+        </TagBox>
       </Header>
       <ImageBox>
         <Image src={content?.thumbnail || defaultThumb}/>
@@ -62,6 +64,14 @@ const TopHeader = styled.div`
   }
 `;
 
+const TagBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #6BA4DE;
+`;
+
 const ImageBox = styled.div`
   margin: 20px auto;
   text-align: center;
@@ -71,6 +81,9 @@ const ImageBox = styled.div`
    }
   
   color: #767676;
+  h3 {
+    margin-top: 20px;
+  }
 `;
 
 const Desc = styled.div`

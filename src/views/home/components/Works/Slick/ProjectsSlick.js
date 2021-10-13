@@ -18,7 +18,7 @@ const ProjectsSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
   };
 
   return (
@@ -65,8 +65,6 @@ const ProjectsSlider = () => {
 export default ProjectsSlider;
 
 const Container = styled.div`
-  .slick-arrow {
-  }
 
   .slick-dots {
     display: flex !important;

@@ -36,7 +36,7 @@ const InfiniteScroll = () => {
               Intersection Observer API 는 그들이 감시하고자 하는 요소가 다른 요소(viewport)에 들어가거나 나갈때 또는 요청한 부분만큼 두 요소의 교차부분이 변경될 때 마다 실행될 콜백 함수를 등록할 수 있게 합니다.
             </p>
             <Link href='https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API'>
-              <a>InterSection Observer 정보 확인하기</a>
+              <a target='_blank'>InterSection Observer 정보 확인하기</a>
             </Link>
             <p>기본 사용법은 아래와 같다.</p>
             <Image src={infinite2}/>

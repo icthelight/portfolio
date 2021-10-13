@@ -28,7 +28,7 @@ export default class AboutSlick extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       centerMode: true,
     };
     return (
@@ -55,6 +55,10 @@ export default class AboutSlick extends Component {
 const Container = styled.div`
   margin-top: 20px;
 
+  .slick-arrow {
+    color: rgba(0, 173, 181, 0.9);
+  }
+
   h2 {
     font-weight: 500;
   }
@@ -71,7 +75,7 @@ const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
   }
 

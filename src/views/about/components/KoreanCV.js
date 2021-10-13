@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import Section from "../../home/components/shared/Section";
 import AboutSlick from "./Slick/AboutSlick";
+import {ContentContainer} from "../../shared/components/LayoutStyled";
 
 
 const KoreanCV = () => {
@@ -28,7 +29,10 @@ const KoreanCV = () => {
         <p>
           다양한 프로젝트를 통해 계속해서 발전하는 프론트엔드 개발자가 되고 싶습니다.
         </p>
-        <AboutSlick/>
+        <ContentContainer>
+
+          <AboutSlick/>
+        </ContentContainer>
       </Content>
     </Container>
   )
