@@ -39,16 +39,20 @@ const ProjectsSlider = () => {
                   </Desc>
                   <IconBox>
                     <Link href={item.sourceUrl}>
-                      <Icon>
-                        <RiGithubFill/>
-                        <h3>View Source</h3>
-                      </Icon>
+                      <a target={'_blank'}>
+                        <Icon>
+                          <RiGithubFill/>
+                          <h3>View Source</h3>
+                        </Icon>
+                      </a>
                     </Link>
                     <Link href={item.siteUrl}>
-                      <Icon>
-                        <RiGlobalLine/>
-                        <h3>Visit Website</h3>
-                      </Icon>
+                      <a target={'_blank'}>
+                        <Icon>
+                          <RiGlobalLine/>
+                          <h3>Visit Website</h3>
+                        </Icon>
+                      </a>
                     </Link>
 
                   </IconBox>
