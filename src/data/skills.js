@@ -1,8 +1,7 @@
 export const skills = [
   {
-    title: 'ReactJS',
-    desc: 'CRA, Redux, Redux-saga 를 활용하여 비동기통신하는 웹 사이트를 제작할 수 있으며, NextJS 를 활용하여 SSR 환경의 웹 사이트를 제작할 수 있습니다.'
-
+    title: 'ReactJS / NextJS',
+    desc: 'CRA, Redux, Redux-saga 를 활용하여 비동기통신 및 상태 관리하는 웹 사이트를 제작할 수 있습니다. 또한, NextJS로 SSR 환경의 웹 사이트를 제작할 수 있습니다.'
   },
   {
     title: 'Firebase',

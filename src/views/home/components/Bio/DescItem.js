@@ -42,7 +42,7 @@ const Container = styled.div`
 `;
 
 const Item = styled.div`
-  margin: 40px 0;
+  margin: 30px 0 0;
 
   h1 {
     margin-bottom: 20px;
