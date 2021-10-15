@@ -20,7 +20,7 @@ const Popup = () => {
               <p>컴포넌트를 클릭하면 팝업창이 열리는 기능을 구현해보자!</p>
               <p>기본적으로 팝업창의 기능은 ReactDOM의 createPortal()을 활용한다.</p>
               <Link href={'https://ko.reactjs.org/docs/portals.html'}>
-                <a>createPortal 자세히 알아보기</a>
+                <a target={'_blank'}>createPortal 자세히 알아보기</a>
               </Link>
               <p>사용법은 아래와 같다. createPortal을 사용할 팝업 컨테이너를 만들어주었다. </p>
               <Image src={popup1}/>

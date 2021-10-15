@@ -43,7 +43,7 @@ const Screen = styled.div`
   left:0;
   right: 0;
   pointer-events: none;
-  background: rgba(0,0,0,0.5)
+  background: rgba(0,0,0,0.6)
   
 `;
 export default Visual;
