@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 import Section from "../../home/components/shared/Section";
 import AboutSlick from "./Slick/AboutSlick";
-import {ContentContainer} from "../../shared/components/LayoutStyled";
-
 
 const KoreanCV = () => {
   return (
@@ -22,17 +20,15 @@ const KoreanCV = () => {
           <span className={'important'}> ReactJS</span>를 기반으로
           <span className={'important'}> Redux (Redux-Saga, Redux-toolkit)</span> 을 활용하여 제작했습니다.
         </p>
+        <p><span className={'important'}>Firebase</span> 를 활용하여 게시글을 작성하고 관리하는 CRUD 사이트도 제작하였습니다.</p>
         <p>
-          프로젝트를 진행하며 <span className={'important'}>Jira, Fork, Github, ESLint</span> 등을 적극 활용하며 타겟을 맞추고, 애자일한 방식으로 업무하는 것에 익숙해지려
+          <span className={'important'}>Jira, Fork, Github, Postman, ESLint </span> 등 실무에서 활용되는 프로그램을 적극적으로 활용하며 타겟을 맞추고, 애자일한 방식으로 일하는 것에 익숙해지려
           노력했습니다.
         </p>
         <p>
-          다양한 프로젝트를 통해 계속해서 발전하는 프론트엔드 개발자가 되고 싶습니다.
+          다양한 프로젝트를 통해 계속해서 발전하는 프론트엔드 개발자가 되겠습니다.
         </p>
-        <ContentContainer>
-
           <AboutSlick/>
-        </ContentContainer>
       </Content>
     </Container>
   )

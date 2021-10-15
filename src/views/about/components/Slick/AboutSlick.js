@@ -17,7 +17,7 @@ const items = [
   {id: 2, image: soccer, desc: '손흥민 선수가 소속된 토트넘을 응원하는 축구 팬이기도 합니다.'},
   {id: 3, image: earphones, desc: 'Coldplay, Ed Sheeran, Justin Bieber 의 음악을 좋아합니다'},
   {id: 4, image: puppy, desc: '유튜브로 동물농장을 보면서 힐링합니다'},
-  {id: 5, image: passion, desc: '마음 먹은 것은 곧장 행동으로 옮기는 추진력이 있으며, 융통성이 있어서 변화나 새로운 시도를 주저하지 않습니다.'},
+  {id: 5, image: passion, desc: '마음 먹은 것은 곧장 행동으로 옮기는 추진력이 있습니다.'},
 ];
 
 export default class AboutSlick extends Component {
@@ -32,7 +32,7 @@ export default class AboutSlick extends Component {
       centerMode: true,
     };
     return (
-      <Container>
+      <Container className={'aboutslick'}>
         <h2> 저에 대한 TMI는 아래와 같습니다! </h2>
         <StyledSlider {...settings}
         >
@@ -54,20 +54,41 @@ export default class AboutSlick extends Component {
 
 const Container = styled.div`
   margin-top: 20px;
+  padding: 0 250px;
+  
 
-  .slick-arrow {
-    color: rgba(0, 173, 181, 0.9);
-  }
-
+  
   h2 {
-    font-weight: 500;
+    margin-bottom: 10px;
   }
+
+  li {
+    button {
+      font-size: 0;
+      padding: 0;
+      outline: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: 0;
+      display: flex;
+    }
+  }
+
+
 `;
 
 const StyledSlider = styled(Slider)`
   .slick-slide div {
     outline: none;
   }
+  
+    button {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -75,11 +96,13 @@ const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
   }
 
   p {
-    font-size: 17px;
+    font-size: 18px;
   }
+
+
 `;

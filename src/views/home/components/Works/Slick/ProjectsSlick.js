@@ -116,7 +116,7 @@ const ImageContainer = styled.div`
 `;
 
 const Item = styled.div`
-
+  margin-bottom: 10px;
 `;
 
 const Thumb = styled.div`
@@ -141,7 +141,7 @@ const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
   color: rgb(0, 173, 172);
-  margin-bottom: 10px;
+  margin: 16px 0;
 `;
 
 const Content = styled.div`
@@ -171,8 +171,9 @@ const Icon = styled.div`
   transition: 0.3s;
 
   svg {
-    width: 30px;
-    height: 30px;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
     fill: rgb(0, 173, 172);
     transition: 0.3s;
 

@@ -42,8 +42,7 @@ const NavItem = styled.div`
   display: flex;
   align-items: center;
   margin: 10px 0;
-  padding: 10px;
-  font-size: 24px;
+  padding: 5px;
   line-height: 35px;
   color: #fff;
   border-radius: 20px;
@@ -60,8 +59,8 @@ const NavItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px;
-    font-size: 24px;
+    padding: 0 10px;
+    font-size: 20px;
     color: #fff;
     text-transform: capitalize;
     cursor: pointer;
@@ -74,8 +73,8 @@ const Icon = styled.div`
   align-items: center;
   margin-right: 10px;
   svg {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
   }
 `;
 export default Nav;

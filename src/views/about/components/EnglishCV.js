@@ -21,8 +21,11 @@ const EnglishCV = () => {
         I have also developed my administrative skills by creating monthly sales reports. I examined nickel market
         condition such as price investigation and trade statistics to assist in preparing nickel market analysis.<br/>
         <br/><br/>
-        Having accumulated knowledge and experience, I assure that I fit perfectly for becoming a successful employee in
-        your company.<br/>
+
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        I believe that problem solving and communication skills, and keen attention to customers' needs are quite important for front-end developer.
+       <br/> Having accumulated knowledge and experience, I assure that I fit perfectly for becoming a successful employee in
+        your company.<br/><br/>
 
         I am a passionate, patient and responsible person to learn anything which is requested for my job in the
         company.<br/>
