@@ -12,6 +12,7 @@ import QsLib from "../../views/blog/components/BlogDetail/Post/QsLib";
 import InfiniteScroll from "../../views/blog/components/BlogDetail/Post/InfiniteScroll";
 import Popup from "../../views/blog/components/BlogDetail/Post/Popup";
 import RatioBox from "../../views/blog/components/BlogDetail/Post/RatioBox";
+import ScrollByArrow from "../../views/blog/components/BlogDetail/Post/ScrollByArrow";
 
 export const blogData = [
   {
@@ -63,6 +64,7 @@ export const blogData = [
     description: 'ref 속성을 이용하여 스크롤 움직임을 감지하고, 스크롤을 이동시키는 기능입니다.',
     publishedAt: format(new Date(2021, 7, 7), 'yyyy/MM/dd'),
     tags: ['스크롤', 'scrollWidth', 'useRef'],
+    desc: <ScrollByArrow/>,
   },
   {
     title: '무한 스크롤 구현하기',
