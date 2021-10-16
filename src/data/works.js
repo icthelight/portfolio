@@ -11,7 +11,7 @@ export const works = {
       name: 'Marketer',
       desc: 'HTML/SCSS 를 활용하여 반응형으로 제작한 사이트입니다.',
       thumbnail:  marketer,
-      siteUrl: '',
+      siteUrl: 'https://marketer-hyungji.vercel.app/',
       sourceUrl: 'https://github.com/icthelight/Marketer_rev.git',
     },
     {
@@ -32,7 +32,7 @@ export const works = {
       name: 'Firebase CRUD 사이트',
       desc: 'Firebase 를 사용하여 CRUD 기능을 하고, 로그인 등 Authentication 상태도 관리하는 블로그 사이트를 만들었습니다.',
       thumbnail:  firebase,
-      siteUrl: '',
+      siteUrl: 'https://blog-hyungji.vercel.app/',
       sourceUrl: 'https://github.com/icthelight/youtube.git',
     },
   ]

@@ -65,9 +65,6 @@ const ProjectsSlider = () => {
     </Container>
   )
 }
-
-export default ProjectsSlider;
-
 const Container = styled.div`
 
   .slick-dots {
@@ -93,29 +90,8 @@ const Container = styled.div`
       margin: 0 5px;
       border: 0;
       display: flex;
-
+      cursor: pointer;
     }
-
-
-  }
-`;
-const StyledSlider = styled(Slider)`
-  .slick-slide div {
-    outline: none;
-  }
-`;
-
-const ImageContainer = styled.div`
-  margin: 0 16px;
-
-  img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-
-  p {
-    font-size: 17px;
   }
 `;
 
@@ -192,5 +168,6 @@ const Icon = styled.div`
       fill: rgb(53, 98, 123);
     }
   }
-
 `;
+
+export default ProjectsSlider;

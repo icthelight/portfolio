@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import styled from 'styled-components';
 import Image from 'next/image';
 
@@ -6,103 +6,74 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import earphones from '../../../../images/earphones.jpeg';
-import soccer from '../../../../images/soccer.jpeg';
-import puppy from '../../../../images/puppy.jpeg';
-import jogging from '../../../../images/jogging.jpeg';
-import passion from '../../../../images/passion.jpeg';
+import {ContentContainer} from "../../../shared/components/LayoutStyled";
+import {aboutItems} from "../../../../data/about";
 
-const items = [
-  {id: 1, image: jogging, desc: '6km 정도는 거뜬히 산책을 할 정도로 한강 산책을 즐겨합니다.'},
-  {id: 2, image: soccer, desc: '손흥민 선수가 소속된 토트넘을 응원하는 축구 팬이기도 합니다.'},
-  {id: 3, image: earphones, desc: 'Coldplay, Ed Sheeran, Justin Bieber 의 음악을 좋아합니다'},
-  {id: 4, image: puppy, desc: '유튜브로 동물농장을 보면서 힐링합니다'},
-  {id: 5, image: passion, desc: '마음 먹은 것은 곧장 행동으로 옮기는 추진력이 있습니다.'},
-];
-
-export default class AboutSlick extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      centerMode: true,
-    };
-    return (
-      <Container className={'aboutslick'}>
+const AboutSlick = () => {
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  return (
+    <Container>
+      <ContentContainer>
         <h2> 저에 대한 TMI는 아래와 같습니다! </h2>
-        <StyledSlider {...settings}
+        <Slider {...settings}
         >
-          {items.map(item => {
+          {aboutItems.map(item => {
             return (
               <div key={item.id}>
-                <ImageContainer>
-                  <Image src={item.image}/>
-                  <p>{item.desc}</p>
-                </ImageContainer>
+                <Item>
+                  <Thumb>
+                    <Image src={item.image}/>
+                  </Thumb>
+                  <Desc>
+                    <p>{item.desc}</p>
+                  </Desc>
+                </Item>
               </div>
             );
           })}
-        </StyledSlider>
-      </Container>
-    );
-  }
+        </Slider>
+      </ContentContainer>
+
+    </Container>
+  )
 }
 
 const Container = styled.div`
   margin-top: 20px;
   padding: 0 250px;
-  
 
-  
   h2 {
     margin-bottom: 10px;
   }
-
-  li {
-    button {
-      font-size: 0;
-      padding: 0;
-      outline: 0;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin: 0 5px;
-      border: 0;
-      display: flex;
-    }
-  }
-
-
-`;
-
-const StyledSlider = styled(Slider)`
-  .slick-slide div {
-    outline: none;
-  }
   
-    button {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
 `;
 
-const ImageContainer = styled.div`
-  margin: 0 16px;
+const Item = styled.div`
+
+`;
+
+const Thumb = styled.div`
 
   img {
     width: 100%;
     height: 250px;
     object-fit: cover;
   }
+`;
+
+const Desc = styled.div`
+  margin-bottom: 20px;
 
   p {
     font-size: 18px;
   }
-
-
 `;
+
+export default AboutSlick;
