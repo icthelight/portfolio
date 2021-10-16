@@ -14,11 +14,12 @@ const KoreanCV = () => {
           사용자들이 이용하기에 편리하도록 웹페이지를 개발 및 개편하고 더 편리한 새로운 기능을 추가하는 등의 모습을 보며 프론트엔드 직무를 동경하게 되었습니다.
         </p>
         <p>
+          <span className={'important'}> ReactJS</span>를 기반으로
+          <span className={'important'}> Redux (Redux-Saga, Redux-toolkit)</span> 을 활용하여
           사진을 검색하고 필터링하는 <span className={'important'}>Unsplash</span>,
           동영상을 검색하는 <span className={'important'}>Youtube </span>
           등의 사이트를
-          <span className={'important'}> ReactJS</span>를 기반으로
-          <span className={'important'}> Redux (Redux-Saga, Redux-toolkit)</span> 을 활용하여 제작했습니다.
+           제작했습니다.
         </p>
         <p><span className={'important'}>Firebase</span> 를 활용하여 게시글을 작성하고 관리하는 CRUD 사이트도 제작하였습니다.</p>
         <p>

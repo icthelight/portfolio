@@ -23,7 +23,7 @@ const EnglishCV = () => {
         <br/><br/>
 
         {/* eslint-disable-next-line react/no-unescaped-entities */}
-        I believe that problem solving and communication skills, and keen attention to customers' needs are quite important for front-end developer.
+        I believe that problem solving, communication skills, and keen attention to customers' needs are quite important to front-end developer.
        <br/> Having accumulated knowledge and experience, I assure that I fit perfectly for becoming a successful employee in
         your company.<br/><br/>
 
