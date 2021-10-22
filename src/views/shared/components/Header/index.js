@@ -6,7 +6,6 @@ import Gnb from "./Gnb";
 import {boxShadow} from "../../../../styled/mixin";
 import {useMyRef} from "../../../../hook/useMyRef";
 
-
 const Header = () => {
 
   const scrolled = useMyRef(700)
@@ -34,8 +33,7 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 0 50px;
   transition: 0.3s;
-
-
+  
   &.scrolled {
     background: #fff;
     box-shadow: ${boxShadow()};

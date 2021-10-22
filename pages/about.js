@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Head from 'next/head';
-import AboutContainer from "../src/views/about/containers/AboutContainer";
 
+import AboutContainer from "../src/views/about/containers/AboutContainer";
 
 const About = () => {
   return (

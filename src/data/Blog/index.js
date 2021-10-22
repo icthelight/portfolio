@@ -75,6 +75,5 @@ export const blogData = [
     publishedAt: format(new Date(2021, 7, 25), 'yyyy/MM/dd'),
     tags: ['무한 스크롤', 'infinite scroll', 'intersection observer'],
     desc: <InfiniteScroll/>,
-
   },
 ]

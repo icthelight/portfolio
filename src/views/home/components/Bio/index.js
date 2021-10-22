@@ -5,7 +5,6 @@ import SectionTitle from "../shared/SectionTitle";
 import DescItem from "./DescItem";
 import {ContentContainer} from "../../../shared/components/LayoutStyled";
 
-
 const Bio = () => {
   return (
     <Container id={'bio'}>

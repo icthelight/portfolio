@@ -3,7 +3,6 @@ import styled, {css} from 'styled-components';
 import InView from "../../../shared/components/inView";
 import {useRouter} from "next/router";
 
-
 const Section = ({children, id}) => {
   const location = useRouter();
   const isBlogId = location.pathname === '/blog/[id]'
