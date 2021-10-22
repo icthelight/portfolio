@@ -21,7 +21,8 @@
     "react-slick": "^0.28.1",
     "rooks": "^5.6.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "throttle-debounce": "^3.0.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.13.2",

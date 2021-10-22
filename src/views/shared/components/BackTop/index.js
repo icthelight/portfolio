@@ -4,7 +4,6 @@ import {animateScroll as scroll} from 'react-scroll'
 import cn from 'classnames';
 import {useMyRef} from "../../../../hook/useMyRef";
 
-
 const BackTop = () => {
   const onClick = () => {
     scroll.scrollToTop({

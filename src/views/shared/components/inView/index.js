@@ -2,13 +2,11 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import {useInViewRef} from "rooks";
 
-
 const InView = ({children}) => {
 
-  const [myRef, inView] = useInViewRef(() => {
-    threshold : [0.3, 0]
+  const [myRef, inView] = useInViewRef(() => {}, {
+    threshold: [0.3, 0]
   });
-
 
   return (
     <Container ref={myRef} className={cn({inView})}>

@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 
 import {skills} from "../../../../data/skills";
 import {ContentContainer} from "../../../shared/components/LayoutStyled";
-
 
 const SkillItem = () => {
   return (

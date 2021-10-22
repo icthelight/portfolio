@@ -4,7 +4,6 @@ import Image from 'next/image';
 import defaultThumb from '../../../../images/Blog/default thumb.png'
 import Tags from "./Tags";
 
-
 const Content = ({content = []}) => {
   return (
     <Container>

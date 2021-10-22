@@ -9,7 +9,7 @@ const Nav = () => {
     <Container>
       {
         sectionNames.map((item, index) => (
-          <NavItem key={index} className={'navitem'}>
+          <NavItem key={index} className={'navItem'}>
             <Link activeClass="isActive"
                   to={item.name}
                   spy={true}
