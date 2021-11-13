@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
+import profile from '../../../../images/profile.jpeg';
 import Section from "../shared/Section";
 import SectionTitle from "../shared/SectionTitle";
 import DescItem from "./DescItem";
@@ -14,9 +16,7 @@ const Bio = () => {
       <ContentContainer>
         <Contents>
           <ImageBox>
-            <img
-              src="https://media-exp1.licdn.com/dms/image/C5603AQEtKs_2_YLgVQ/profile-displayphoto-shrink_800_800/0/1596814966945?e=1635379200&v=beta&t=BAyIVXWdy3fs27QnBUdGlsdkoMZ58lODDujHIdoTkn0"
-              alt=""/>
+            <Image src={profile}/>
           </ImageBox>
           <Desc>
             <DescItem/>
