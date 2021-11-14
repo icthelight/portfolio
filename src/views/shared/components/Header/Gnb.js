@@ -6,17 +6,17 @@ const Gnb = () => {
     <Container>
       <NavItem>
         <Link href={'/'}>
-          <NavLink>Home</NavLink>
+          <a>Home</a>
         </Link>
       </NavItem>
       <NavItem>
         <Link href={'/about'}>
-          <NavLink>About</NavLink>
+          <a>About</a>
         </Link>
       </NavItem>
       <NavItem>
         <Link href={'/blog'}>
-          <NavLink>Blog</NavLink>
+          <a>Blog</a>
         </Link>
       </NavItem>
     </Container>
@@ -29,21 +29,19 @@ const Container = styled.div`
 `;
 
 const NavItem = styled.div`
-
-`;
-
-const NavLink = styled.a`
-  display: flex;
-  align-items: center;
-  height: 70px;
-  padding: 0 20px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: capitalize;
-  cursor: pointer;
-  .scrolled & {
-    color: #333;
-  }
+ a{
+   display: flex;
+   align-items: center;
+   height: 70px;
+   padding: 0 20px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: capitalize;
+   cursor: pointer;
+   .scrolled & {
+     color: #333;
+   }
+ }
 `;
 export default Gnb;
